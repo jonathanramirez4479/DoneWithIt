@@ -1,23 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+
+import WelcomeScreen from "./app/screens/WelcomScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
-  let x;
-  console.log("new ")
-
-  return (
-    <View style={styles.container}>
-      <Text>This is my new app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <ViewImageScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

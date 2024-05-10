@@ -1,13 +1,19 @@
 {
-    "configurations": [
-        
-        {
-            "name": "Attach to packager",
-            "cwd": "${workspaceFolder}",
-            "type": "reactnative",
-            "request": "attach",
-            "port": "8081",
-            "sourceMaps": true
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Android Hermes",
+      "request": "launch",
+      "type": "reactnativedirect",
+      "cwd": "${workspaceFolder}",
+      "platform": "android"
+    },
+    {
+      "name": "Attach to packager",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "attach"
+    }
+  ],
+  "compounds": []
 }
